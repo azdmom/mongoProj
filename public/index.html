@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mongoose Jobs in Philadelphia</title>
+    <style>
+      body { background-color: #F2F6D0 }
+      .jumbotron {
+          background-image: url('images/comp.jpg'); 
+      }
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+      }
+      #notes {
+        float: right;
+        width: 30%;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: #FCF5C7;
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+<body>
+    <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+            <h1 class="display-4 font-italic">Current Jobs for Mongo Database Developers</h1>
+            <p class="lead my-3">Below, please observe various listings for Mongo/Mongoose programming and development jobs.</p>
+        </div>
+    </div>
+    <div id="wrapper">
+      <div id="jobs"></div>
+      <div id="notes"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

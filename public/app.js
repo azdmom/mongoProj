@@ -1,9 +1,9 @@
 // Grab the articles as a json
-$.getJSON("/articles", function(data) {
+$.getJSON("/jobs", function(data) {
     // For each one
     for (var i = 0; i < data.length; i++) {
       // Display the apropos information on the page
-      $("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "</p>");
+      $("#jobs").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "</p>");
     }
   });
   
@@ -50,7 +50,7 @@ $.getJSON("/articles", function(data) {
     // Run a POST request to change the note, using what's entered in the inputs
     $.ajax({
       method: "POST",
-      url: "/articles/" + thisId,
+      url: "/jobs/" + thisId,
       data: {
         // Value taken from title input
         title: $("#titleinput").val(),
